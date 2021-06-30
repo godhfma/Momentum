@@ -1,10 +1,26 @@
+function plus(a, b){
+    console.log(a - b);
+}
+
+function divide(c, d){
+    console.log(c/d);
+}
+
+plus(30, 5);
+plus(450, 5);
+divide(50, 5);
+
+// function sayHello();
+
 const player={
-    name:'JH',
-    points:10,
-    fat:false,
+    name: 'JH',
+    sayHello : function(name){
+        console.log("Hello! this is " + name);
+    },
 };
-console.log(player);
-player.fat =true; /*constnat 안의 내용을 바꾸는 것은 문제없음 */
-player.lastName='potato';
-player.points= player.points+15;
-console.log(player.points);
+
+console.log(player.name);
+player.sayHello('Lynn');
+player.sayHello('Nico');
+player.sayHello('Rose');
+
